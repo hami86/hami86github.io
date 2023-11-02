@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>menghitung luas dan keliling bangun datar </title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2 >MENGHITUNG LUAS KELILING BANGUN DATAR</h2>
+<p>Silahkan Pilih Menu Di Bawah Ini:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'pp')">Persegi Panjang</button>
+  <button class="tablinks" onclick="openCity(event, 'segitiga')">Segitiga</button>
+  <button class="tablinks" onclick="openCity(event, 'lingkaran')">Lingkaran</button>
+</div>
+
+<div id="pp" class="tabcontent">
+  <h3>Persegi Panjang</h3>
+  <p>Menghitung luas dan keliling persegi panjang</p>
+  <table cellspacing = "10" class="tablepanjang">
+    <tr>
+        
+        <td >Panjang</td>
+        <td>:</td>
+        <td><input id="panjang" type="text" placeholder="input panjang"></td>
+    </tr>
+
+    <tr>
+        <td >Lebar</td>
+        <td>:</td>
+        <td><input id="lebar" type="text" placeholder="input lebar"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <button  onclick="persegi_panjang()"> jumlakan </button>
+            <button  onclick="reset()"> Reset </button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><hr></td>
+    </tr>
+    <tr>
+        <td > luas</td>
+        <td></td>
+        <td align="center">
+            <label for="luas" id="luas">0</label>
+        </td>
+    </tr>
+    <tr>
+        <td > keliling</td>
+        <td></td>
+        <td align="center">
+            <label for="keliling" id="keliling">0</label>
+        </td>
+    </tr>
+    
+</table>
+</div>
+
+<div id="segitiga" class="tabcontent">
+  <h3>Segitiga</h3>
+  <p style="font-size: larger;">menghitung luas</p> 
+  <table cellspacing = "10" class="tablepanjang">
+    <tr>
+        <td >Panjang alas</td>
+        <td>:</td>
+        <td><input id="panjangalas" type="text" placeholder="input panjang alas "></td>
+    </tr>
+
+    <tr>
+        <td >Tinggi</td>
+        <td>:</td>
+        <td><input id="tinggi" type="text" placeholder="input tinggi"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <button  onclick="segitiga()"> jumlakan </button>
+            <button  onclick="reset2()"> Reset </button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><hr></td>
+    </tr>
+    <tr>
+        <td > Luas</td>
+        <td></td>
+        <td align="center">
+            <label for="luass" id="luass">0</label>
+        </td>
+    </tr>
+    
+    
+</table>
+
+
+
+<p style="font-size: larger;">menghitung keliling</p> 
+  <table cellspacing = "10" class="tablepanjang">
+    <tr>
+        <td >sisi 1</td>
+        <td>:</td>
+        <td><input id="s1" type="text" placeholder="input sisii 1 "></td>
+    </tr>
+
+    <tr>
+        <td >sisi 2</td>
+        <td>:</td>
+        <td><input id="s2" type="text" placeholder="input sisi 2"></td>
+    </tr>
+
+        <tr>
+        <td >sisi 3</td>
+        <td>:</td>
+        <td><input id="s3" type="text" placeholder="input sisi 3"></td>
+    </tr>
+
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <button  onclick="segitiga2()"> jumlakan </button>
+            <button  onclick="reset3()"> Reset </button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><hr></td>
+    </tr>
+    <tr>
+        <td > Keliling </td>
+        <td></td>
+        <td align="center">
+            <label for="kelilings" id="kelilings">0</label>
+        </td>
+    </tr>
+    
+    
+</table>
+  
+</div>
+
+<div id="lingkaran" class="tabcontent">
+  <h3>Lingkaran</h3>
+  <p>Menghitung Luas Dan Keliling lingkaran </p>
+  <table cellspacing = "10" class="tablepanjang">
+    <tr>
+        <td >jari jari</td>
+        <td>:</td>
+        <td><input id="jar" type="text" placeholder="input jari jari "></td>
+    </tr>
+
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <button  onclick="lingkaran()"> jumlakan </button>
+            <button  onclick="reset4()"> Reset </button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><hr></td>
+    </tr>
+    <tr>
+        <td > luas </td>
+        <td></td>
+        <td align="center">
+            <label for="luasL" id="luasL">0</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td > Keliling </td>
+        <td></td>
+        <td align="center">
+            <label for="kelilingL" id="kelilingL">0</label>
+        </td>
+    </tr>
+    
+    
+</table>
+</div>
+
+<script src="js/js.js"></script>
+   
+</body>
+</html> 
